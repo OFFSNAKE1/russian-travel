@@ -1,0 +1,197 @@
+@import url(../vendor/normalize.css);
+/*ВСЕ ШРИФТЫ НАДО БУДЕТ ПОТОМ ПЕРЕНЕСТИ ОТСЮДА, КАК И ВСЕ ОСТАЛЬНОЕ*/
+@font-face {
+    src:
+        url("../fonts/Inter/Inter-Regular.woff2") format("woff2"),
+        url("../fonts/Inter/Inter-Regular.woff") format("woff"),
+        url("../fonts/Inter/Inter-Regular.ttf") format("truetype");
+    font-family: "Inter";
+    font-weight: 400;
+}
+@font-face {
+  src:
+      url("../fonts/Inter/Inter-Bold.woff2") format("woff2"),
+      url("../fonts/Inter/Inter-Bold.woff") format("woff"),
+      url("../fonts/Inter/Inter-Bold.ttf") format("truetype");
+  font-family: "Inter";
+  font-weight: 700;
+}
+@font-face {
+  src:
+      url("../fonts/Inter/Inter-Black.woff2") format("woff2"),
+      url("../fonts/Inter/Inter-Black.woff") format("woff"),
+      url("../fonts/Inter/Inter-Bold.ttf") format("truetype");
+  font-family: "Inter";
+  font-weight: 900;
+}
+
+
+.page {
+  font-family: 'Inter', Arial, sans-serif;
+  color: white;
+  font-weight: 400;
+  background-color: #2A2C2F;
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 1040px) {
+
+}
+@media screen and (max-width: 770px) {
+
+}
+@media screen and (max-width: 400px) {
+
+}
+
+
+
+.header {
+  padding: 28px 48px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 770px) {
+ .header {
+   padding: 24px 28px 0;
+ }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    padding: 16px 16px 0;
+  }
+}
+
+.header__logo {
+  width: 176px;
+  height: 52px;
+}
+
+@media screen and (max-width: 400px) {
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
+}
+
+.header__links {
+  display: flex;
+  align-items: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__item {
+  margin-right: 18px;
+  list-style-type: none;
+}
+
+.header__item:last-of-type {
+  margin: 0;
+}
+
+.header__link {
+  color: white;
+  text-align: right;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 18px;
+  text-decoration-line: none;
+}
+
+@media screen and (max-width: 400px) {
+  .header__link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.header__link:last-child {
+  margin: 0;
+}
+
+.header__link_underline {
+  text-decoration-line: underline;
+}
+
+
+
+.content {
+  display: grid;
+  grid-row-gap: 92px;
+}
+
+@media screen and (max-width: 770px) {
+  .content {
+    grid-row-gap: 88px;
+  }
+ }
+
+@media screen and (max-width: 400px) {
+  .content {
+    grid-row-gap: 64px;
+   }
+ }
+
+
+ .lead {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: calc(100% - 2 * 148px); /*сто проц это весь блок минус 2 отступа по 148пх*/
+   margin: 56px auto 0;
+ }
+
+ .lead__title {
+   font-style: normal;
+   font-weight: 900;
+   font-size: 96px;
+   line-height: 100px;
+   text-align: center;
+   color: white;
+   margin: 0;
+   width: 720px;   /*ширина колонки с текстом*/
+ }
+
+ .lead__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: white;
+  margin-top: 32px;
+  margin-bottom: 0;
+  width: 640px;   /*ширина колонки с текстом*/
+ }
+
+ .lead__image {
+  max-width: 100%;
+  margin: 64px 0 0;
+ }
+
+.lead__caption {          /* сделать ее слева*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 8px 0 0;
+
+}
