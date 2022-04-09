@@ -3,15 +3,23 @@
   grid-template-areas: "title url"
                        "image paragraph";
   padding-bottom: 80px;
+  gap: 48px 40px;
 }
 
 .place:last-of-type {
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 1040px) {
+  .place {
+    gap: 48px 32px;
+  }
+}
+
 @media screen and (max-width: 770px) {
   .place {
     padding-bottom: 73px;
+    gap: 48px 28px;
   }
 }
 
@@ -22,5 +30,6 @@
                           "image"
                           "paragraph";
     padding-bottom: 50px;
+    gap: 32px 0px;
   }
 }
