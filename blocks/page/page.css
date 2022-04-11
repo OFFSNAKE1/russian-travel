@@ -8,9 +8,23 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 28px 0 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 1040px) {
+  .page {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .page {
+    padding: 16px 0 24px;
+  }
 }

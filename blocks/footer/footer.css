@@ -1,18 +1,21 @@
 .footer {
-  padding: 92px 48px 24px;
+  margin: 92px auto 24px;
+  width: calc(100% - 2 * 48px);
   display: grid;
   grid-template-areas: "links copyright";
 }
 
 @media screen and (max-width: 770px) {
   .footer {
-    padding: 88px 24px 24px;
+    width: calc(100% - 2 * 24px);
+    margin: 88px auto 0;
   }
 }
 
 @media screen and (max-width: 425px) {
   .footer {
-    padding: 64px 16px 24px;
+    width: calc(100% - 2 * 16px);
+    margin: 64px auto 0;
     grid-template-areas: "links"
                           "copyright";
   }
