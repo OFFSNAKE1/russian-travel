@@ -3,7 +3,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
   gap: 16px;
-  width: 92.5%;
+  max-width: 1184px;
+  padding: 0 0 92px;
 }
 
 @media screen and (max-width: 1040px) {
@@ -17,6 +18,7 @@
  .photo-grid {
    width: calc(100% - 2 * 24px);
    gap: 16px;
+   padding: 0 0 88px;
  }
 }
 
@@ -24,5 +26,6 @@
  .photo-grid {
    width: calc(100% - 2 * 16px);
    gap: 12px;
+   padding: 0 0 64px;
  }
 }

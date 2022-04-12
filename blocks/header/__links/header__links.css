@@ -2,6 +2,6 @@
   display: flex;
   align-items: flex-end;
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 12px 0;
   margin: 0;
 }

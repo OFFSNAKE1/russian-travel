@@ -8,14 +8,14 @@
 @media screen and (max-width: 770px) {
   .footer {
     width: calc(100% - 2 * 24px);
-    margin: 88px auto 0;
+    margin: 88px auto 24px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 650px) {
   .footer {
     width: calc(100% - 2 * 16px);
-    margin: 64px auto 0;
+    margin: 64px auto 24px;
     grid-template-areas: "links"
                           "copyright";
   }
